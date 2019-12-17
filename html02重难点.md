@@ -1,32 +1,31 @@
 #  a标签的用法
 ## attributes: 
-  1. **href = "address"**
-  
-    1.1 Use this:
-       ```html
-       <a href="//google.com">Google</a>
-       ```
-       instead of 
-       ```html
-       <a href="http://google.com"> Google</a>
-       ```
-       beacause:
-       //google.com can automatically determine whether we should use https or http
+1. **href = "address"**
 
-       the procedure:
-       //google.com -- > http://google.com --> http://www.google.com --> https://www.google.com
-  
-    1.2 锚点 href = “#idName”
-       ```html
-       <p id="xxx">point1</p>
-       <p>point2</p>
-        .
-        .
-        .
-       <p>pointn</p>
-       <a href="#xxx">jump to</a>
-       ```
-       click "jump to" view point will scroll to point1 
+  - Use this:
+  ```html
+    <a href="//google.com">Google</a>
+  ```
+  instead of 
+  ```html
+    <a href="http://google.com"> Google</a>
+  ```
+  beacause:
+  //google.com can automatically determine whether we should use https or http
+  the procedure:
+  //google.com -- > http://google.com --> http://www.google.com --> https://www.google.com
+
+  - 锚点 href = “#idName”
+  ```html
+   <p id="xxx">point1</p>
+   <p>point2</p>
+    .
+    .
+    .
+   <p>pointn</p>
+   <a href="#xxx">jump to</a>
+  ```
+  click "jump to" view point will scroll to point1 
    
  2. **target**
   - _blanck (open in new window)
