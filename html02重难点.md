@@ -153,6 +153,98 @@ img {
 * case2: screen size < 300px
          image size = screen size
          
+# Form
+## Usage
+  - send GET/POST request and refresh the current page
+## Attributes for Form
+  1. action
+  
+     - defines the action to be performes when the form is submitted. Normally, the form data is sent to the web page on the          server when user clickes on the submit button.
+   
+  2. target
+    - It determines where to display result after hitting submit button
+      - "_blank" display in new window
+      - "_self" display in current window
+      - "_parent" dispaly in its parent layer of window
+      - "_top" display in its top layer of window
+   3. method
+    - get vs post:
+      - GET:
+        - appends form-data into the URL in name/value pairs, so it's not good to send sensive data through this method
+        - length of url is limited to 2048 characters
+      - POST: 
+        - good for sending sensive and huge length of data through this method, because the sending form-data won't be    appended to url 
+        
+   4. autocomplete
+      - autocomplete = "on" will give user suggestions about their userInfo, when they are filling the form
+      - autocomplete = "off"
+    
+  ```html
+    <form action="./server.php" method="POST" autocomplete="on" target="_blank">
+      <input type= "text" name="userName">User Name:
+    </form>
+  ```   
+ ## Elements in form
+  - **input**
+    - types:
+      1. text
+      2. color
+      3. password
+      4. file
+        ```html
+        <input type="file"/> <!--can only uplaod single file-->
+        <imput type="file" multiple/> <!--can upload muitiple files-->
+       ```
+      5. radio (buttons in the same group must have the same name)
+       ```html
+        <input type="radio" name="gender"/> Male
+        <imput type="radio" name="gender"/> Female
+       ```
+      6. checkbox (buttons in the same group must have the same name)
+        ```html
+        <input type="checkbox" name="hobbies"/> Sing
+        <imput type="checkbox" name="hobbies"/> Dance
+        <imput type="checkbox" name="hobbies"/> Writing
+        ```
+      7. hidden
+         used not for user, it's used for browser to fill some data into the specific area
+         Scenario: 
+            broswer autimatically extracts the user id from url and fill into the form, users don't need to fill and see its id. 
+            
+ - **textarea**(by default user can resize the textarea by drag its right bottom corner)
+   - creating no resizable textarea
+      ```html
+      <texarea style="resize:none; width: 50%; height=300px;"></textarea>
+      ```
+ - **select**
+   ```html
+    <select>
+      <option value="">---please choose--</option>
+      <option value="1">Monday</option>
+      <option value="2">Tuesday</option>
+    </select>  
+   ```
+ - **important**
+    - **button vs type="submit"**
+      ```html
+      <button type="btton">Click Me<img src="./dog.png" alt="a dog"/></button> <!--button can contains other tags-->
+      <input type="submit" value="Submit!"/><!--submit cannot contain any other tag-->
+      ```
+    - **every form must contain one submit function button**
+  
+    - **if there is only one <button> in the form and <button> does not define the type, then it will autimatically perform as a submit button**
+      ```html
+      <button type="submit">click</button>
+      ```
+    - **each input field must contain name attribute, otherwise when user click submit button the data for that field won't be sent**
+
+
+    
+               
+               
+      
+    
+
          
          
 
