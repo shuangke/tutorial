@@ -1,0 +1,24 @@
+# JS History
+* 1993 Mosaic web browser was released： the first browser with graphical user interface使得非技术专业人员也可以使用
+* Mosaic的lead developer自己跑出来单干创立了NetSpace
+* 1994 NetSpace release NetSpace Navigator
+* NetSpace Navigator被广泛使用
+* 1995 NetSpace想给Navigator嵌入一个脚本语言使得网页能够有一些dynamic behaviors
+* 任命Brenden Eich探索将Scheme语言潜入同时与SUN公司合作尝试将Java嵌入browser，但都不理想
+* NetSpace决定开发一个新的语言更好的适用于browser
+* Brenden Eich用十天时间开发了JavaScript，（最先叫Mocha然后叫LiveScript最后改名为JavaScript）
+* August 1996 Microsoft releases IE浏览器支持JScript，从此浏览器大战开始了
+* Microsoft鸡贼地把自己售出的所有电脑都by default装上了IE浏览器
+* Nov 1996作为反击NetScape向ECMA提交了语言标准建议所有broswer vendor都使用JavaScript
+* 因为Microsoft的鸡贼操作，获得了浏览器大战的胜利
+* NetSpace把broswer进行开源（FireFox），但还是无力回天，最终被AOL收购
+* 之后近十年时间IE统治了browser市场，市场占有率80%以上
+* 因为没有什么对手，微软懈怠了，解散了浏览器团队
+* FireFox发起挑战，不太理想
+* 2004 Google挖了一些做FireFox和之前做IE的人开发Chrome
+* 2008 Chrome发布
+* 2006 Chrome占有市场60%，大胜！
+* 2009 Node.js发布使得JavaScript也能写Server了，只要在device上装Node.js
+
+# JS的缺点
+[具体资料](https://www.1point3acres.com/bbs/thread-602017-1-1.html)
